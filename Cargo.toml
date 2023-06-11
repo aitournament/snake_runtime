@@ -1,0 +1,12 @@
+[package]
+name = "snake_runtime"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+clap = { version = "4.3.0", features = ["derive"] }
+cli-table = "0.4.7"
+colored = "2.0.0"
+wasmer = "3.3.0"
+serde = { version = "1.0.164", features = ["derive"] }
+serde_json = { version = "1.0.96"}
