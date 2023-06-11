@@ -19,6 +19,7 @@ pub struct SnakeRuntime {
 }
 
 impl SnakeRuntime {
+    /// Creates a new snake runtime with the 2 WASM files provided. They must be provided as raw bytes of a binary WASM file.
     pub fn new(red_wasm: &[u8], blue_wasm: &[u8]) -> Self {
         let mut store = Store::default();
         let module = Module::new(&store, &SNAKE_RUNTIME_WASM).unwrap();
@@ -85,6 +86,7 @@ impl SnakeRuntime {
 }
 
 impl SnakeRuntime {
+    /// Runs a single game and returns the result.
     pub fn run_game(&mut self, seed: u32) -> GameResult {
         let result_ptr = self
             .run_game
