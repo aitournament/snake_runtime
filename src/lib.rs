@@ -1,7 +1,7 @@
 use serde::Serialize;
 use wasmer::{imports, Function, Instance, Module, Store, Value};
 
-pub const SNAKE_RUNTIME_WASM: &[u8] = include_bytes!("snake_runtime.wasm");
+const SNAKE_RUNTIME_WASM: &[u8] = include_bytes!("snake_runtime.wasm");
 
 pub struct SnakeRuntime {
     store: Store,
