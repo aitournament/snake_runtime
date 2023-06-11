@@ -11,10 +11,9 @@ To use the library, add it as a git dependency to a Rust project:
 ```toml
 [dependencies]
 snake_runtime = { git = "https://github.com/aitournament/snake_runtime.git", branch = "master" }
+```
 
 Be sure to keep this up to date by occasionally running `cargo update`.
-
-```
 
 ## CLI
 
